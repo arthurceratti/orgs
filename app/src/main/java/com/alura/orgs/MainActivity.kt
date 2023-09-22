@@ -1,12 +1,16 @@
-package com.example.orgs
+package com.alura.orgs
 
 import android.app.Activity
 import android.os.Bundle
-import android.widget.Toast
+import android.view.View
+import android.widget.TextView
+
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Toast.makeText(this, "Poc Poc faz o Porcopotamo!!", Toast.LENGTH_SHORT).show()
+        val view = TextView(this)
+        view.setText("cesta de frutas!")
+        setContentView(view)
     }
 }
