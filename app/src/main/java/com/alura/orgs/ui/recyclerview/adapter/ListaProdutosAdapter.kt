@@ -26,11 +26,9 @@ class ListaProdutosAdapter(
             valor.text = produto.valor.toPlainString()
         }
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val inflater = LayoutInflater.from(context)
-        val view = inflater.inflate(R.layout.produto_item, parent,false
-        )
+        val inflater = LayoutInflater.from(context) //usar view apartir de um layout
+        val view = inflater.inflate(R.layout.produto_item, parent,false)
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
